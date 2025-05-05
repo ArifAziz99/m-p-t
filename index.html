@@ -3,492 +3,337 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MPT</title>
     <link rel="stylesheet" href="style/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="src/script.js" defer></script>
   </head>
 
-  <body class="overflow-x-hidden">
-    <nav class="flex">
-      <!-- remove ! from "#!" when you link the content in the href -->
-      <a id="logo1" href="#">MPT</a>
-      <button
-        type="button"
-        class="font-semibold text-lg ml-[91rem] m-2 px-5 text-white bg-lime-600 hover:bg-lime-700 rounded-lg"
-      >
-        Contact Now
-      </button>
-    </nav>
+  <body class="scroll-smooth">
+ <nav class="fixed top-0 left-0 z-50 flex items-center justify-between w-full h-16 px-6 bg-black/50 backdrop-blur-md">
+  <!-- Logo -->
+  <a id="logo1" href="#">
+    <img src="assets/logo/logo0.png" alt="MPT Logo" class="h-20 m-2">
+  </a>
+
+  <!-- Navigation container: UL + Button -->
+  <div class="flex items-center ml-auto gap-6">
+    <!-- Nav Links -->
+    <ul class="hidden md:flex gap-8 text-white font-medium text-lg">
+      <li><a href="#" class="hover:text-blue-200">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-200">About</a></li>
+      <li><a href="#services" class="hover:text-blue-200">Services</a></li>
+      <li><a href="#appointments" class="hover:text-blue-200">Appointments</a></li>
+    </ul>
+
+    <!-- Contact Button -->
+    <button
+      type="button"
+      class="font-semibold text-lg px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-lg"
+    >
+      Contact Now
+    </button>
+  </div>
+</nav>
+
+    
+    
+    
     <main>
       <!-- ----------------------------------- hero section with hreo text ---------------------------- -->
-      <section
-        class="flex flex-col w-[90vw] h-[85vh] mx-24 mt-2rem bg-green-100"
-      >
-        <div class="flex">
-          <div>
-            <h1 class="text-6xl font-bold leading-[5rem] text-left pt-40 pl-20">
-              Modern Physiotherapy Treatment
+      <section class="w-full bg-green-100 pt-32 pb-12">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
+          
+          <!-- Text Content -->
+          <div class="md:w-1/2 text-center md:text-left">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+              Modern <br class="hidden md:block" />
+              Physiotherapy <br class="hidden md:block" />
+              Treatment
             </h1>
-            <p class="font-medium text-xl text-left pt-10 pl-20 text-slate-500">
-              Experience the freedom of pain-free movement and regain confidence
+            <p class="text-lg text-slate-600 mt-6 leading-relaxed">
+              Experience pain-free movement and regain confidence<br class="hidden sm:block" />
               in your body with expert physiotherapy care.
             </p>
             <button
               type="button"
-              class="font-semibold text-xl ml-20 mt-40 p-6 px-10 text-white bg-lime-600 hover:bg-lime-700 rounded-lg"
+              class="mt-10 px-8 py-4 text-white text-lg font-semibold bg-blue-600 hover:bg-blue-700 rounded-lg"
             >
               Call Us Now
             </button>
           </div>
-          <img
-            class="w-[78.9rem] ml-[3rem] "
-            src="asset/image/doctor0.png"
-            alt=""
-          />
+      
+          <!-- Hero Image -->
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <img
+              src="assets/image/doctor2.png"
+              alt="Physiotherapy Treatment"
+              class="w-full max-w-md mx-auto"
+            />
+          </div>
         </div>
       </section>
+      
 
       <!-- -------------------------------------- services card -------------------------------------- -->
-      <section class="w-[90vw] h-[75vh] mx-24 bg-gray-50">
-        <div class="grid grid-rows-2 grid-flow-col gap-x-8 gap-y-8 pt-20">
-          <div class="grid col-span-2 pl-10 gap-4 w-[44vw] h-[27vh]">
-            <div
-              class="max-w-md bg-green-100 hover:bg-green-200 rounded-xl shadow-md overflow-hidden md:max-w-4xl"
-            >
-              <div class="grid">
-                <div class="md:shrink-0"></div>
-                <div class="p-10">
-                  <a
-                    href="#"
-                    class="block mt-1 text-4xl leading-tight font-bold text-black"
-                    >Quality care for you and <br />
-                    The Once you loved</a
-                  >
-                  <p class="mt-8 text-slate-500">
-                    Looking to take your team away on a retreat to enjoy awesome
-                    food and take in some sunshine.Looking to take your team
-                    away on a retreat to enjoy awesome food and take in some
-                    sunshine.
-                  </p>
-                </div>
-              </div>
-            </div>
+      <section class="w-full bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Section Headline -->
+          <div class="text-center mb-16">
+            <h2 class="text-black text-4xl sm:text-5xl font-bold">
+              Quality Care for You and the Ones You Love
+            </h2>
+            <p class="text-slate-500 mt-4 text-lg max-w-2xl mx-auto">
+              Experience personalized physiotherapy with a focus on long-term recovery, comfort, and well-being.
+            </p>
           </div>
-
-          <div class="pl-10">
-            <div
-              class="max-w-md mx-auto bg-red-100 hover:bg-red-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-            >
-              <div class="grid w-[20vw] h-[27vh]">
-                <div class="md:shrink-0">
-                  <img
-                    class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                    src="asset/image/shoulder.jpg"
-                    alt="Modern building architecture"
-                  />
-                </div>
-                <div class="p-6 w-80">
-                  <a
-                    href="#"
-                    class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                    >Shoulder Pain</a
-                  >
-                  <p class="mt-2 text-slate-500">
-                    Looking to take your team away on a retreat to enjoy awesome
-                    food and take in some sunshine.
-                  </p>
-                </div>
+      
+          <!-- Service Cards Grid -->
+          <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      
+            <!-- Shoulder Pain -->
+            <div class="bg-red-100 hover:bg-red-200 rounded-xl shadow-md overflow-hidden">
+              <div class="flex flex-col items-center text-center p-6">
+                <img src="assets/image/shoulder.jpg" alt="Shoulder Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h4 class="text-xl font-semibold mb-2">Shoulder Pain</h4>
+                <p class="text-slate-600">
+                  Targeted therapy to relieve shoulder tension and restore range of motion.
+                </p>
               </div>
             </div>
-          </div>
-
-          <div class="">
-            <div
-              class="max-w-md mx-auto bg-purple-100 hover:bg-purple-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-            >
-              <div class="grid w-[20vw] h-[27vh]">
-                <div class="md:shrink-0">
-                  <img
-                    class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                    src="asset/image/back.jpg"
-                    alt="Modern building architecture"
-                  />
-                </div>
-                <div class="p-7 w-80">
-                  <a
-                    href="#"
-                    class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                    >Back Pain</a
-                  >
-                  <p class="mt-2 text-slate-500">
-                    Looking to take your team away on a retreat to enjoy awesome
-                    food and take in some sunshine.
-                  </p>
-                </div>
+      
+            <!-- Back Pain -->
+            <div class="bg-purple-100 hover:bg-purple-200 rounded-xl shadow-md overflow-hidden">
+              <div class="flex flex-col items-center text-center p-6">
+                <img src="assets/image/back.jpg" alt="Back Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h4 class="text-xl font-semibold mb-2">Back Pain</h4>
+                <p class="text-slate-600">
+                  Customized treatment plans to ease back discomfort and improve posture.
+                </p>
               </div>
             </div>
-          </div>
-
-          <div class="">
-            <div
-              class="max-w-md mx-auto bg-yellow-100 hover:bg-yellow-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-            >
-              <div class="grid w-[20vw] h-[27vh]">
-                <div class="md:shrink-0">
-                  <img
-                    class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                    src="asset/image/neck.jpg"
-                    alt="Modern building architecture"
-                  />
-                </div>
-                <div class="p-7 w-80">
-                  <a
-                    href="#"
-                    class="block mt-1 text-xl leading-tight font-semibold text-bold hover:underline"
-                    >Neck Pain</a
-                  >
-                  <p class="mt-2 text-slate-500">
-                    Looking to take your team away on a retreat to enjoy awesome
-                    food and take in some sunshine.
-                  </p>
-                </div>
+      
+            <!-- Neck Pain -->
+            <div class="bg-yellow-100 hover:bg-yellow-200 rounded-xl shadow-md overflow-hidden">
+              <div class="flex flex-col items-center text-center p-6">
+                <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h4 class="text-xl font-semibold mb-2">Neck Pain</h4>
+                <p class="text-slate-600">
+                  Alleviate stiffness and regain mobility with gentle neck therapy.
+                </p>
               </div>
             </div>
-          </div>
-
-          <div class="">
-            <div
-              class="max-w-md mx-auto bg-lime-100 hover:bg-lime-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-            >
-              <div class="grid h-[27vh]">
-                <div class="md:shrink-0">
-                  <img
-                    class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                    src="asset/image/elbow.jpg"
-                    alt="Modern building architecture"
-                  />
-                </div>
-                <div class="p-7 w-80">
-                  <a
-                    href="#"
-                    class="block mt-1 text-xl leading-tight font-semibold text-bold hover:underline"
-                    >Elbow Pain</a
-                  >
-                  <p class="mt-2 text-slate-500">
-                    Looking to take your team away on a retreat to enjoy awesome
-                    food and take in some sunshine.
-                  </p>
-                </div>
+      
+            <!-- Elbow Pain -->
+            <div class="bg-lime-100 hover:bg-lime-200 rounded-xl shadow-md overflow-hidden">
+              <div class="flex flex-col items-center text-center p-6">
+                <img src="assets/image/elbow.jpg" alt="Elbow Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h4 class="text-xl font-semibold mb-2">Elbow Pain</h4>
+                <p class="text-slate-600">
+                  Effective rehabilitation for tennis elbow, golfer’s elbow, and more.
+                </p>
               </div>
             </div>
-          </div>
-
-          <div class="pr-10">
-            <div
-              class="max-w-md mx-auto bg-blue-100 hover:bg-blue-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-            >
-              <div class="grid w-[20vw] h-[27vh]">
-                <div class="md:shrink-0">
-                  <img
-                    class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                    src="asset/image/knee.jpg"
-                    alt="Modern building architecture"
-                  />
-                </div>
-                <div class="p-7 w-80">
-                  <a
-                    href="#"
-                    class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                    >Knee Pain</a
-                  >
-                  <p class="mt-2 text-slate-500">
-                    Looking to take your team away on a retreat to enjoy awesome
-                    food and take in some sunshine.
-                  </p>
-                </div>
+      
+            <!-- Knee Pain -->
+            <div class="bg-blue-100 hover:bg-blue-200 rounded-xl shadow-md overflow-hidden">
+              <div class="flex flex-col items-center text-center p-6">
+                <img src="assets/image/knee.jpg" alt="Knee Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h4 class="text-xl font-semibold mb-2">Knee Pain</h4>
+                <p class="text-slate-600">
+                  Restore function and mobility with proven knee therapy techniques.
+                </p>
               </div>
             </div>
-          </div>
-
-          <div class="pr-10">
-            <div
-              class="max-w-md mx-auto bg-orange-100 hover:bg-orange-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-            >
-              <div class="grid h-[27vh]">
-                <div class="md:shrink-0">
-                  <img
-                    class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                    src="asset/image/wrist.jpg"
-                    alt="Modern building architecture"
-                  />
-                </div>
-                <div class="p-7 w-80">
-                  <a
-                    href="#"
-                    class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                    >Wrist Pain</a
-                  >
-                  <p class="mt-2 text-slate-500">
-                    Looking to take your team away on a retreat to enjoy awesome
-                    food and take in some sunshine.
-                  </p>
-                </div>
+      
+            <!-- Wrist Pain -->
+            <div class="bg-orange-100 hover:bg-orange-200 rounded-xl shadow-md overflow-hidden">
+              <div class="flex flex-col items-center text-center p-6">
+                <img src="assets/image/wrist.jpg" alt="Wrist Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h4 class="text-xl font-semibold mb-2">Wrist Pain</h4>
+                <p class="text-slate-600">
+                  Reduce strain and recover flexibility with tailored wrist care.
+                </p>
               </div>
             </div>
+      
           </div>
         </div>
       </section>
+      
+      
     </main>
     <!-- ------------------------------------- why choose us  ------------------------------------- -->
 
-    <section class="w-[90vw] h-[80vh] mx-24 bg-gray-100">
-
-      <div class="grid grid-rows-2 grid-flow-col gap-x-8 gap-y-8 pt-20">
-
-        <div class="grid row-span-2 pl-10 gap-2 w-[50vw] h-[65vh]">
-          <div
-            class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl"
-          >
-            <div class="grid">
-              <div class="md:shrink-0"></div>
-              <div class="p-10">
-                <a
-                  href="#"
-                  class="block mt-1 text-4xl leading-tight font-bold text-black"
-                  >Why Choose Our <br />
-                  Service?</a
-                >
-                <p class="mt-8 text-slate-500">
-                  Looking to take your team away on a retreat to enjoy awesome
-                  food and take in some sunshine.Looking to take your team away on
-                  a retreat to enjoy awesome food and take in some sunshine.
-                </p>
-              </div>
-  
-              <div class="grid grid-flow-col p-10">
-                <div class="p-10">
-                  <a
-                    href="#"
-                    class="block mt-1 text-4xl leading-tight font-bold text-black"
-                    >Why
-                  </a>
-                  <p class="mt-8 text-slate-500">Looking to take</p>
-                  <a
-                    href="#"
-                    class="block mt-1 text-4xl leading-tight font-bold text-black"
-                    >Why
-                  </a>
-                  <p class="mt-8 text-slate-500">Looking to take</p>
-                </div>
-                <div class="p-10">
-                  <a
-                    href="#"
-                    class="block mt-1 text-4xl leading-tight font-bold text-black"
-                    >Why
-                  </a>
-                  <p class="mt-8 text-slate-500">Looking to take</p>
-                  <a
-                    href="#"
-                    class="block mt-1 text-4xl leading-tight font-bold text-black"
-                    >Why
-                  </a>
-                  <p class="mt-8 text-slate-500">Looking to take</p>
-                </div>
-              </div>
+    <section class="w-full bg-gray-100 py-20">
+      <div class="max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-2">
+        
+        <!-- Left Side: Why Choose Us -->
+        <div class="bg-white rounded-xl shadow-lg p-10">
+          <h2 class="text-4xl font-bold text-black mb-6">Why Choose Our <br /> Service?</h2>
+          <p class="text-slate-600 mb-10">
+            Our dedicated team ensures personalized physiotherapy solutions for long-term healing and comfort.
+            With proven techniques and a focus on holistic well-being, you're in expert hands.
+          </p>
+          
+          <!-- Bullet Points Grid -->
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <h4 class="text-xl font-semibold text-black mb-2">Expert Therapists</h4>
+              <p class="text-slate-500 text-sm">Highly skilled and certified professionals.</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-black mb-2">Latest Techniques</h4>
+              <p class="text-slate-500 text-sm">Modern methods for faster recovery.</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-black mb-2">Flexible Scheduling</h4>
+              <p class="text-slate-500 text-sm">Sessions that fit your routine.</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-black mb-2">Affordable Plans</h4>
+              <p class="text-slate-500 text-sm">Quality care that fits your budget.</p>
             </div>
           </div>
         </div>
-  
-        <div class="pr-10">
-          <div
-            class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-          >
-            <div class="grid w-[30vw] h-[30vh]">
-              <div class="md:shrink-0">
-                <img
-                  class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                  src="asset/image/shoulder.jpg"
-                  alt="Modern building architecture"
-                />
-              </div>
-              <div class="p-6 w-80">
-                <a
-                  href="#"
-                  class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                  >Home Visit</a
-                >
-                <p class="mt-2 text-slate-500">
-                  Looking to take your team away on a retreat to enjoy awesome
-                  food and take in some sunshine.
-                </p>
-              </div>
+    
+        <!-- Right Side: Features Cards -->
+        <div class="grid gap-6">
+          
+          <!-- Home Visit Card -->
+          <div class="bg-white rounded-xl shadow-md flex items-center p-6">
+            <img src="assets/image/shoulder.jpg" alt="Home Visit" class="w-20 h-20 rounded-full object-cover mr-6" />
+            <div>
+              <h4 class="text-xl font-semibold text-black mb-1">Home Visit</h4>
+              <p class="text-slate-500 text-sm">We offer professional physiotherapy in the comfort of your home.</p>
+            </div>
+          </div>
+    
+          <!-- Qualified Doctor Card -->
+          <div class="bg-white rounded-xl shadow-md flex items-center p-6">
+            <img src="assets/image/back.jpg" alt="Qualified Doctor" class="w-20 h-20 rounded-full object-cover mr-6" />
+            <div>
+              <h4 class="text-xl font-semibold text-black mb-1">Qualified Doctor</h4>
+              <p class="text-slate-500 text-sm">Our doctors are licensed and experienced in multiple specializations.</p>
             </div>
           </div>
         </div>
-  
-        <div class="pr-10">
-          <div
-            class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-          >
-            <div class="grid w-[30vw] h-[30vh]">
-              <div class="md:shrink-0">
-                <img
-                  class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                  src="asset/image/back.jpg"
-                  alt="Modern building architecture"
-                />
-              </div>
-              <div class="p-7 w-80">
-                <a
-                  href="#"
-                  class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                  >Qualified Doctor</a
-                >
-                <p class="mt-2 text-slate-500">
-                  Looking to take your team away on a retreat to enjoy awesome
-                  food and take in some sunshine.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-  
+      </div>
     </section>
+    
 
     <!-- ------------------------------------------ about card ------------------------------------- -->
-    <section class="w-[90vw] h-[85vh] mx-24 bg-green-50">
-      
-      <div class="text-center pt-14">
-        <h2 class="">
-          <span class="font-bold text-4xl">Meet the Doctor</span>
-        </h2>
-       
-      </div>
-      <div class="text-center pt-10">
-        <h4 class="about text-slate-500">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-          expedita reprehenderit delectus rerum qui hic reiciendis eveniet
-          maxime.
-        </h4>
-      </div>
-      
-      <div class="pt-20">
-        <div
-          class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-md"
-        >
-          <div class="grid w-[35vw] h-[50vh] mx-16 mt-10">
-            <div class="md:shrink-0">
-              <img
-            id="designer"
-            src="asset/image/doctor0.png"
-            alt="This is our Designer"
-            width="50%"
-        />
-            </div>
-            <div class="w-80 text-center">
-              <a
-                href="#"
-                class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                >Qualified Doctor</a
-              >
-              <p class="mt-5 text-slate-500">
-                Looking to take your team away on a retreat to enjoy awesome
-                food and take in some sunshine.
-              </p>
-            </div>
-          </div>
+<section class="w-full bg-green-50 py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold text-black">Meet the Doctor</h2>
+    <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi expedita reprehenderit delectus rerum qui hic reiciendis eveniet maxime.
+    </p>
+
+    <!-- Doctor Card -->
+    <div class="mt-16 flex flex-col items-center md:flex-row md:justify-center">
+      <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row max-w-3xl">
+        
+        <!-- Doctor Image -->
+        <div class="flex-shrink-0">
+          <img
+            src="assets/image/doctor0.png"
+            alt="Our Doctor"
+            class="w-full h-80 object-cover md:h-full md:w-64"
+          />
         </div>
-      </div>
 
-    </section>
-
-    <!-- ------------------------------------------ testimonials ----------------------------------- -->
-
-    <section class="w-[90vw] h-[65vh] mx-24 bg-white">
-      
-      <div class="text-center pt-16">
-        <h2 class="">
-          <span class="font-bold text-4xl">Testimonials</span>
-        </h2>
-       
-      </div>
-      <div class="text-center pt-10">
-        <h4 class="about text-slate-500">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-          expedita reprehenderit delectus rerum qui hic reiciendis eveniet
-          maxime.
-        </h4>
-      </div>
-      
-      <div class="flex mt-20 ml-44">
-
-      <div class="grid pr-10">
-        <div
-          class="max-w-md mx-auto bg-gray-100 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-        >
-          <div class="grid w-[35vw] h-[30vh]">
-            <div class="md:shrink-0">
-              <img
-                class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                src="asset/image/shoulder.jpg"
-                alt="Modern building architecture"
-              />
-            </div>
-            <div class="p-6 w-80">
-              <a
-                href="#"
-                class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                >Person Whone</a
-              >
-              <p class="mt-2 text-slate-500">
-                Looking to take your team away on a retreat to enjoy awesome
-                food and take in some sunshine.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid pr-10">
-        <div
-          class="max-w-md mx-auto bg-gray-100 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-        >
-          <div class="grid w-[35vw] h-[30vh]">
-            <div class="md:shrink-0">
-              <img
-                class="w-[8rem] rounded-full object-cover ml-4 mt-4"
-                src="asset/image/back.jpg"
-                alt="Modern building architecture"
-              />
-            </div>
-            <div class="p-7 w-80">
-              <a
-                href="#"
-                class="block mt-1 text-xl leading-tight font-semibold text-black hover:underline"
-                >Person Touwe</a
-              >
-              <p class="mt-2 text-slate-500">
-                Looking to take your team away on a retreat to enjoy awesome
-                food and take in some sunshine.
-              </p>
-            </div>
-          </div>
+        <!-- Doctor Info -->
+        <div class="p-6 text-left">
+          <h3 class="text-2xl font-semibold text-black">Dr. John Doe</h3>
+          <p class="text-sm text-slate-500 mt-2 mb-4">Qualified Physiotherapist</p>
+          <p class="text-slate-600">
+            Passionate about helping patients recover and live pain-free. Dr. John brings 15+ years of experience in modern physiotherapy techniques.
+          </p>
+          <button
+            type="button"
+            class="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg"
+          >
+            Book an Appointment
+          </button>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+    <!-- ------------------------------------------ testimonials ----------------------------------- -->
+
+    <section class="w-full bg-white py-20">
+      <div class="max-w-7xl mx-auto px-6">
+      <!-- Section Heading -->
+      <div class="text-center px-4">
+        <h2 class="text-4xl font-bold text-gray-800">Testimonials</h2>
+        <p class="mt-4 text-slate-500 max-w-xl mx-auto">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita
+          reprehenderit delectus rerum qui hic reiciendis eveniet maxime.
+        </p>
+      </div>
+    
+      
+      <!-- Testimonials -->
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-16">
+
+        <!-- Testimonial Card 1 -->
+          <div class="bg-red-100 hover:bg-red-200 rounded-xl shadow-md overflow-hidden">
+            <div class="flex flex-col items-center text-center p-6">
+              <img src="assets/image/shoulder.jpg" alt="Shoulder Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+              <h4 class="text-xl font-semibold mb-2">Shoulder Pain</h4>
+              <p class="text-slate-600">
+                Targeted therapy to relieve shoulder tension and restore range of motion.
+              </p>
+            </div>
+          </div>
+    
+        <!-- Testimonial Card 2 -->
+          <div class="bg-purple-100 hover:bg-purple-200 rounded-xl shadow-md overflow-hidden">
+            <div class="flex flex-col items-center text-center p-6">
+              <img src="assets/image/back.jpg" alt="Back Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+              <h4 class="text-xl font-semibold mb-2">Back Pain</h4>
+              <p class="text-slate-600">
+                Customized treatment plans to ease back discomfort and improve posture.
+              </p>
+            </div>
+          </div>
+    
+        <!-- Testimonial Card 3 -->
+          <div class="bg-yellow-100 hover:bg-yellow-200 rounded-xl shadow-md overflow-hidden">
+            <div class="flex flex-col items-center text-center p-6">
+              <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+              <h4 class="text-xl font-semibold mb-2">Neck Pain</h4>
+              <p class="text-slate-600">
+                Alleviate stiffness and regain mobility with gentle neck therapy.
+              </p>
+            </div>
+          </div>
+      </div>
     </section>
-
-
-
+    
 
 
 
     <!-- --------------------------------------------- footer -------------------------------------- -->
 
-    <footer>
-      <a class="cbtn" href="#!">Contact us</a>
-      <a class="copyright" href="#!">&copy; 2025 | MPT</a>
+    <footer class="w-full bg-black text-white py-10">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-1">
+        <!-- Contact Button -->
+        <a href="#!" class="text-white font-semibold py-3 px-6 hover:text-blue-200">
+          Contact Us
+        </a>
+    
+        <!-- Copyright Text -->
+        <p class="text-sm text-gray-400 text-center md:text-right">
+          &copy; 2025 | MPT. All rights reserved.
+        </p>
+      </div>
     </footer>
+    
   </body>
 </html>
