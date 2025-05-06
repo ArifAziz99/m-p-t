@@ -12,6 +12,9 @@
 
 <body class="scroll-smooth">
 
+  <div class="mouse-dot"></div>
+
+  <!-- -------------------------------------------- navbar ------------------------------------- -->
   <nav
     class="fixed top-0 left-0 z-50 flex items-center justify-between w-full h-14 md:h-20 px-6 bg-white/50 backdrop-blur-lg shadow-md">
     <!-- Logo -->
@@ -60,7 +63,7 @@
             Experience pain-free movement and regain confidence<br class="hidden sm:block" />
             in your body with expert physiotherapy care.
           </p>
-          <button type="button"
+          <button type="button"  onclick="openContactModal()"
             class="mt-20 px-8 py-4 text-white text-lg font-bold bg-green-500 hover:bg-green-600 rounded-full">
             Call Us Now
           </button>
@@ -250,7 +253,7 @@
               Passionate about helping patients recover and live pain-free. Dr. John brings 15+ years of experience in
               modern physiotherapy techniques.
             </p>
-            <button type="button"
+            <button type="button" onclick="openContactModal()"
               class="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg">
               Book an Appointment
             </button>
@@ -401,15 +404,13 @@
   <div id="contactModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center hidden z-50">
     <div class="bg-white rounded-xl shadow-lg p-6 w-80 relative">
       <button onclick="closeContactModal()"
-        class="absolute top-2 right-3 text-gray-500 hover:text-black text-xl">&times;</button>
+        class="absolute top-2 right-3 text-gray-500 hover:text-black text-3xl">&times;</button>
       <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
       <p><strong>Email:</strong> contact@example.com</p>
       <p><strong>Phone:</strong> +1 234 567 890</p>
       <p><strong>Address:</strong> 123 Street Name, City</p>
     </div>
   </div>
-
-
 </body>
 
 </html>
