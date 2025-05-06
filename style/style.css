@@ -29,29 +29,6 @@ html {
   transition: background-size 300ms ease;
 }
 
-.test-scroll {
-  grid-auto-flow: column;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: inline mandatory;
-}
-
-.test-scroll>* {
-  scroll-snap-align: start;
-}
-
-/* In your CSS file */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
 /* mouse dot */
 .mouse-dot {
   position: fixed;
