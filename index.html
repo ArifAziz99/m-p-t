@@ -10,15 +10,9 @@
   <script src="src/script.js" defer></script>
 </head>
 
-<body class="scroll-smooth font-">
+<body class="scroll-smooth">
 
-    <!--<nav 
- 
- 
-<ul id="menu" class="hidden md:flex flex-col md:flex-row  gap-4 absolute md:static top-20 left-0 w-full md:w-auto bg-white/90  px-6 py-4  text-gray-500 text-md font-semibold ">
-  </nav> -->
-
-<nav class="fixed top-0 left-0 z-50 flex items-center justify-between w-full h-20 px-6 bg-white/50 backdrop-blur-lg shadow-md">
+<nav class="fixed top-0 left-0 z-50 flex items-center justify-between w-full h-14 md:h-20 px-6 bg-white/50 backdrop-blur-lg shadow-md">
   <!-- Logo -->
   <a id="logo1" href="#">
     <img src="assets/logo/logo0.png" alt="MPT Logo" class="h-16 m-2" />
@@ -30,7 +24,7 @@
   </button>
 
   <!-- Navigation Links -->
-  <ul id="menu" class="hidden md:flex flex flex-col md:flex-row md:gap-16 gap-4 absolute md:static top-20 right-0 w-auto bg-white md:bg-transparent px-6 py-4 md:p-0 gap-16 text-gray-500 text-md font-semibold shadow-md md:shadow-none items-center rounded-lg">
+  <ul id="menu" class="hidden md:flex flex flex-col md:flex-row md:gap-16 gap-4 absolute md:static top-14 right-0 w-auto bg-white md:bg-transparent px-6 py-4 md:p-0 gap-16 text-gray-500 text-md font-semibold shadow-md md:shadow-none items-center rounded-lg">
     <li><a href="#" class="hover:text-black block ">Home</a></li>
     <li><a href="#about" class="hover:text-black block ">About</a></li>
     <li><a href="#blog" class="hover:text-black block ">Blog</a></li>
@@ -47,17 +41,17 @@
 
   <main>
     <!-- ----------------------------------- hero section with hreo text ---------------------------- -->
-    <section class="w-full bg-white pt-32 pb-12">
+    <section class="w-full bg-white bg-no-repeat pt-20 md:pt-28 pb-12">
       <div class="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
 
         <!-- Text Content -->
         <div class="md:w-1/2 text-center md:text-left">
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-black">
             Modern <br class="hidden md:block" />
-            Physiotherapy <br class="hidden md:block" />
+            <span class="text-5xl md:text-8xl text-green-500">Physiotherapy</span> <br class="hidden md:block" />
             Treatment
           </h1>
-          <p class="text-lg text-slate-800 mt-6 leading-relaxed">
+          <p class="text-lg text-slate-500 mt-6 leading-relaxed">
             Experience pain-free movement and regain confidence<br class="hidden sm:block" />
             in your body with expert physiotherapy care.
           </p>
@@ -76,7 +70,7 @@
 
 
     <!-- -------------------------------------- services card -------------------------------------- -->
-    <section class="w-full bg-green-50 py-20">
+    <section class="w-full bg-gray-100 bg-no-repeat py-20">
       <div class="max-w-7xl mx-auto px-6">
         <!-- Section Headline -->
         <div class="text-center mb-16">
@@ -89,7 +83,7 @@
         </div>
 
         <!-- Service Cards Grid -->
-        <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 
           <!-- Shoulder Pain -->
           <div class="bg-white rounded-xl shadow-md overflow-hidden">
@@ -365,27 +359,27 @@
 
   <!-- --------------------------------------------- footer -------------------------------------- -->
 
-  <footer class="w-full bg-black text-white py-20">
+  <footer class="w-full bg-black text-white/70 py-20">
     <div class="container mx-auto px-4">
 
       <!-- Footer Links -->
       <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
-        <a href="#about" class="hover:text-blue-200 font-semibold py-3 px-6">About</a>
-        <a href="#blog" class="hover:text-blue-200 font-semibold py-3 px-6">Blog</a>
-        <a href="#services" class="hover:text-blue-200 font-semibold py-3 px-6">Services</a>
-        <a href="#!" class="hover:text-blue-200 font-semibold py-3 px-6">Contact Us</a>
+        <a href="#about" class="hover:text-white font-semibold py-3 px-6">About</a>
+        <a href="#blog" class="hover:text-white font-semibold py-3 px-6">Blog</a>
+        <a href="#services" class="hover:text-white font-semibold py-3 px-6">Services</a>
+        <a href="#!" class="hover:text-white font-semibold py-3 px-6">Contact Us</a>
       </div>
 
       <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
         <!-- social media icons -->
-        <a href="#!" class="text-gray-400 hover:text-blue-200">
-          <img src="assets/image/404.svg" alt="Facebook" class="w-6 h-6" />
+        <a href="#!" class="text-gray-400 hover:text-white">
+          <img src="assets/image/icons8-facebook.svg" alt="Facebook icon by Icons8" class="w-6 h-6" />
         </a>
-        <a href="#!" class="text-gray-400 hover:text-blue-200">
-          <img src="assets/image/404.svg" alt="Twitter" class="w-6 h-6" />
+        <a href="#!" class="text-gray-400 hover:text-white">
+          <img src="assets/image/icons8-insta.svg" alt="Twitter icon by Icons8" class="w-6 h-6" />
         </a>
-        <a href="#!" class="text-gray-400 hover:text-blue-200">
-          <img src="assets/image/404.svg" alt="Instagram" class="w-6 h-6" />
+        <a href="#!" class="text-gray-400 hover:text-white">
+          <img src="assets/image/icons8-x.svg" alt="Instagram icon by Icons8" class="w-6 h-6" />
         </a>
       </div>
 
