@@ -1,300 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MPT</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/script.js" defer></script>
-  </head>
 
-  <body class="scroll-smooth">
- <nav class="fixed top-0 left-0 z-50 flex items-center justify-between w-full h-12 px-6 bg-black/80 backdrop-blur-md">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MPT</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/script.js" defer></script>
+</head>
+
+<body class="scroll-smooth font-">
+
+    <!--<nav 
+ 
+ 
+<ul id="menu" class="hidden md:flex flex-col md:flex-row  gap-4 absolute md:static top-20 left-0 w-full md:w-auto bg-white/90  px-6 py-4  text-gray-500 text-md font-semibold ">
+  </nav> -->
+
+<nav class="fixed top-0 left-0 z-50 flex items-center justify-between w-full h-20 px-6 bg-white/50 backdrop-blur-lg shadow-md">
   <!-- Logo -->
   <a id="logo1" href="#">
-    <img src="assets/logo/logo0.png" alt="MPT Logo" class="h-16 m-2">
+    <img src="assets/logo/logo0.png" alt="MPT Logo" class="h-16 m-2" />
   </a>
 
-  <!-- Navigation container: UL + Button -->
-  <div class="flex items-center ml-auto gap-6">
-    <!-- Nav Links -->
-    <ul class="hidden md:flex gap-8 text-white text-md">
-      <li><a href="#" class="hover:text-blue-200">Home</a></li>
-      <li><a href="#about" class="hover:text-blue-200">About</a></li> 
-      <li><a href="#blog" class="hover:text-blue-200">Blog</a></li>
-      <li><a href="#services" class="hover:text-blue-200">Services</a></li>
-     
-    </ul>
+  <!-- Hamburger Button (Mobile) -->
+  <button id="menu-toggle" class="md:hidden text-3xl text-gray-700 focus:outline-none">
+    ☰
+  </button>
 
-    <!-- Contact Button -->
-    <button
-      type="button"
-      class="text-md px-2 py-1 text-white bg-blue-600 hover:bg-blue-700 rounded-lg"
-    >
-      Contact Us
-    </button>
-  </div>
+  <!-- Navigation Links -->
+  <ul id="menu" class="hidden md:flex flex flex-col md:flex-row md:gap-16 gap-4 absolute md:static top-20 right-0 w-auto bg-white md:bg-transparent px-6 py-4 md:p-0 gap-16 text-gray-500 text-md font-semibold shadow-md md:shadow-none items-center rounded-lg">
+    <li><a href="#" class="hover:text-black block ">Home</a></li>
+    <li><a href="#about" class="hover:text-black block ">About</a></li>
+    <li><a href="#blog" class="hover:text-black block ">Blog</a></li>
+    <li><a href="#services" class="hover:text-black block ">Services</a></li>
+    <li>
+      <button type="button" class="text-md font-semibold px-8 py-2 text-white bg-green-500 hover:bg-green-600 rounded-full w-auto ">
+        Contact Us
+      </button>
+    </li>
+  </ul>
 </nav>
 
-    
-    
-    
-    <main>
-      <!-- ----------------------------------- hero section with hreo text ---------------------------- -->
-      <section class="w-full bg-green-100 pt-32 pb-12">
-        <div class="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
-          
-          <!-- Text Content -->
-          <div class="md:w-1/2 text-center md:text-left">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Modern <br class="hidden md:block" />
-              Physiotherapy <br class="hidden md:block" />
-              Treatment
-            </h1>
-            <p class="text-lg text-slate-600 mt-6 leading-relaxed">
-              Experience pain-free movement and regain confidence<br class="hidden sm:block" />
-              in your body with expert physiotherapy care.
-            </p>
-            <button
-              type="button"
-              class="mt-10 px-8 py-4 text-white text-lg font-semibold bg-blue-600 hover:bg-blue-700 rounded-lg"
-            >
-              Call Us Now
-            </button>
-          </div>
-      
-          <!-- Hero Image -->
-          <div class="md:w-1/2 mb-10 md:mb-0">
-            <img
-              src="assets/image/doctor2-min.png"
-              alt="Physiotherapy Treatment"
-              class="w-full max-w-md mx-auto"
-            />
-          </div>
-        </div>
-      </section>
-      
 
-      <!-- -------------------------------------- services card -------------------------------------- -->
-      <section class="w-full bg-gray-50 py-20">
-        <div class="max-w-7xl mx-auto px-6">
-          <!-- Section Headline -->
-          <div class="text-center mb-16">
-            <h2 class="text-black text-4xl sm:text-5xl font-bold">
-              Quality Care for You and the Ones You Love
-            </h2>
-            <p class="text-slate-500 mt-4 text-lg max-w-2xl mx-auto">
-              Experience personalized physiotherapy with a focus on long-term recovery, comfort, and well-being.
-            </p>
-          </div>
-      
-          <!-- Service Cards Grid -->
-          <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      
-            <!-- Shoulder Pain -->
-            <div class="bg-red-100 hover:bg-red-200 rounded-xl shadow-md overflow-hidden">
-              <div class="flex flex-col items-center text-center p-6">
-                <img src="assets/image/shoulder.jpg" alt="Shoulder Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-                <h4 class="text-xl font-semibold mb-2">Shoulder Pain</h4>
-                <p class="text-slate-600">
-                  Targeted therapy to relieve shoulder tension and restore range of motion.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Back Pain -->
-            <div class="bg-purple-100 hover:bg-purple-200 rounded-xl shadow-md overflow-hidden">
-              <div class="flex flex-col items-center text-center p-6">
-                <img src="assets/image/back.jpg" alt="Back Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-                <h4 class="text-xl font-semibold mb-2">Back Pain</h4>
-                <p class="text-slate-600">
-                  Customized treatment plans to ease back discomfort and improve posture.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Neck Pain -->
-            <div class="bg-yellow-100 hover:bg-yellow-200 rounded-xl shadow-md overflow-hidden">
-              <div class="flex flex-col items-center text-center p-6">
-                <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-                <h4 class="text-xl font-semibold mb-2">Neck Pain</h4>
-                <p class="text-slate-600">
-                  Alleviate stiffness and regain mobility with gentle neck therapy.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Elbow Pain -->
-            <div class="bg-lime-100 hover:bg-lime-200 rounded-xl shadow-md overflow-hidden">
-              <div class="flex flex-col items-center text-center p-6">
-                <img src="assets/image/elbow.jpg" alt="Elbow Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-                <h4 class="text-xl font-semibold mb-2">Elbow Pain</h4>
-                <p class="text-slate-600">
-                  Effective rehabilitation for tennis elbow, golfer’s elbow, and more.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Knee Pain -->
-            <div class="bg-blue-100 hover:bg-blue-200 rounded-xl shadow-md overflow-hidden">
-              <div class="flex flex-col items-center text-center p-6">
-                <img src="assets/image/knee.jpg" alt="Knee Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-                <h4 class="text-xl font-semibold mb-2">Knee Pain</h4>
-                <p class="text-slate-600">
-                  Restore function and mobility with proven knee therapy techniques.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Wrist Pain -->
-            <div class="bg-orange-100 hover:bg-orange-200 rounded-xl shadow-md overflow-hidden">
-              <div class="flex flex-col items-center text-center p-6">
-                <img src="assets/image/wrist.jpg" alt="Wrist Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-                <h4 class="text-xl font-semibold mb-2">Wrist Pain</h4>
-                <p class="text-slate-600">
-                  Reduce strain and recover flexibility with tailored wrist care.
-                </p>
-              </div>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      
-      
-    </main>
-    <!-- ------------------------------------- why choose us  ------------------------------------- -->
 
-    <section class="w-full bg-gray-100 py-20">
-      <div class="max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-2">
-        
-        <!-- Left Side: Why Choose Us -->
-        <div class="bg-white rounded-xl shadow-lg p-10">
-          <h2 class="text-4xl font-bold text-black mb-6">Why Choose Our <br /> Service?</h2>
-          <p class="text-slate-600 mb-10">
-            Our dedicated team ensures personalized physiotherapy solutions for long-term healing and comfort.
-            With proven techniques and a focus on holistic well-being, you're in expert hands.
+  <main>
+    <!-- ----------------------------------- hero section with hreo text ---------------------------- -->
+    <section class="w-full bg-white pt-32 pb-12">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
+
+        <!-- Text Content -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-black">
+            Modern <br class="hidden md:block" />
+            Physiotherapy <br class="hidden md:block" />
+            Treatment
+          </h1>
+          <p class="text-lg text-slate-800 mt-6 leading-relaxed">
+            Experience pain-free movement and regain confidence<br class="hidden sm:block" />
+            in your body with expert physiotherapy care.
           </p>
-          
-          <!-- Bullet Points Grid -->
-          <div class="grid grid-cols-2 gap-6">
-            <div>
-              <h4 class="text-xl font-semibold text-black mb-2">Expert Therapists</h4>
-              <p class="text-slate-500 text-sm">Highly skilled and certified professionals.</p>
-            </div>
-            <div>
-              <h4 class="text-xl font-semibold text-black mb-2">Latest Techniques</h4>
-              <p class="text-slate-500 text-sm">Modern methods for faster recovery.</p>
-            </div>
-            <div>
-              <h4 class="text-xl font-semibold text-black mb-2">Flexible Scheduling</h4>
-              <p class="text-slate-500 text-sm">Sessions that fit your routine.</p>
-            </div>
-            <div>
-              <h4 class="text-xl font-semibold text-black mb-2">Affordable Plans</h4>
-              <p class="text-slate-500 text-sm">Quality care that fits your budget.</p>
-            </div>
-          </div>
+          <button type="button"
+            class="mt-20 px-8 py-4 text-white text-lg font-bold bg-green-500 hover:bg-green-600 rounded-full">
+            Call Us Now
+          </button>
         </div>
-    
-        <!-- Right Side: Features Cards -->
-        <div class="grid gap-6">
-          
-          <!-- Home Visit Card -->
-          <div class="bg-white rounded-xl shadow-md flex items-center p-6">
-            <img src="assets/image/shoulder.jpg" alt="Home Visit" class="w-20 h-20 rounded-full object-cover mr-6" />
-            <div>
-              <h4 class="text-xl font-semibold text-black mb-1">Home Visit</h4>
-              <p class="text-slate-500 text-sm">We offer professional physiotherapy in the comfort of your home.</p>
-            </div>
-          </div>
-    
-          <!-- Qualified Doctor Card -->
-          <div class="bg-white rounded-xl shadow-md flex items-center p-6">
-            <img src="assets/image/back.jpg" alt="Qualified Doctor" class="w-20 h-20 rounded-full object-cover mr-6" />
-            <div>
-              <h4 class="text-xl font-semibold text-black mb-1">Qualified Doctor</h4>
-              <p class="text-slate-500 text-sm">Our doctors are licensed and experienced in multiple specializations.</p>
-            </div>
-          </div>
+
+        <!-- Hero Image -->
+        <div class="w-40 md:w-1/2 mb-10 md:mb-0">
+          <img src="assets/image/doctor2-min.png" alt="Physiotherapy Treatment" class="w-full max-w-md mx-auto" />
         </div>
       </div>
     </section>
-    
-
-    <!-- ------------------------------------------ about card ------------------------------------- -->
-<section class="w-full bg-green-50 py-20">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <!-- Heading -->
-    <h2 class="text-4xl font-bold text-black">Meet the Doctor</h2>
-    <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi expedita reprehenderit delectus rerum qui hic reiciendis eveniet maxime.
-    </p>
-
-    <!-- Doctor Card -->
-    <div class="mt-16 flex flex-col items-center md:flex-row md:justify-center">
-      <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row max-w-3xl">
-        
-        <!-- Doctor Image -->
-        <div class="flex-shrink-0">
-          <img
-            src="assets/image/doctor0-min.png"
-            alt="Our Doctor"
-            class="w-full h-80 object-cover md:h-full md:w-64"
-          />
-        </div>
-
-        <!-- Doctor Info -->
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-semibold text-black">Dr. John Doe</h3>
-          <p class="text-sm text-slate-500 mt-2 mb-4">Qualified Physiotherapist</p>
-          <p class="text-slate-600">
-            Passionate about helping patients recover and live pain-free. Dr. John brings 15+ years of experience in modern physiotherapy techniques.
-          </p>
-          <button
-            type="button"
-            class="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg"
-          >
-            Book an Appointment
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
-    <!-- ------------------------------------------ testimonials ----------------------------------- -->
-
-    <section class="w-full bg-white py-20">
+    <!-- -------------------------------------- services card -------------------------------------- -->
+    <section class="w-full bg-green-50 py-20">
       <div class="max-w-7xl mx-auto px-6">
-      <!-- Section Heading -->
-      <div class="text-center px-4">
-        <h2 class="text-4xl font-bold text-gray-800">Testimonials</h2>
-        <p class="mt-4 text-slate-500 max-w-xl mx-auto">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita
-          reprehenderit delectus rerum qui hic reiciendis eveniet maxime.
-        </p>
-      </div>
-    
-      
-      <!-- Testimonials -->
-        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-16">
+        <!-- Section Headline -->
+        <div class="text-center mb-16">
+          <h2 class="text-black text-4xl sm:text-5xl font-bold">
+            Quality Care for You and the Ones You Love
+          </h2>
+          <p class="text-slate-500 mt-4 text-lg max-w-2xl mx-auto">
+            Experience personalized physiotherapy with a focus on long-term recovery, comfort, and well-being.
+          </p>
+        </div>
 
-        <!-- Testimonial Card 1 -->
-          <div class="bg-gray-100 hover:bg-gray-200 rounded-xl shadow-md overflow-hidden">
+        <!-- Service Cards Grid -->
+        <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+          <!-- Shoulder Pain -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
             <div class="flex flex-col items-center text-center p-6">
-              <img src="assets/image/shoulder.jpg" alt="Shoulder Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+              <img src="assets/image/shoulder.jpg" alt="Shoulder Pain"
+                class="w-24 h-24 rounded-full object-cover mb-4" />
               <h4 class="text-xl font-semibold mb-2">Shoulder Pain</h4>
               <p class="text-slate-600">
                 Targeted therapy to relieve shoulder tension and restore range of motion.
               </p>
             </div>
           </div>
-    
-        <!-- Testimonial Card 2 -->
-          <div class="bg-gray-100 hover:bg-gray-200 rounded-xl shadow-md overflow-hidden">
+
+          <!-- Back Pain -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
             <div class="flex flex-col items-center text-center p-6">
               <img src="assets/image/back.jpg" alt="Back Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
               <h4 class="text-xl font-semibold mb-2">Back Pain</h4>
@@ -303,9 +113,9 @@
               </p>
             </div>
           </div>
-    
-        <!-- Testimonial Card 3 -->
-          <div class="bg-gray-100 hover:bg-gray-200 rounded-xl shadow-md overflow-hidden">
+
+          <!-- Neck Pain -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
             <div class="flex flex-col items-center text-center p-6">
               <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
               <h4 class="text-xl font-semibold mb-2">Neck Pain</h4>
@@ -314,27 +124,280 @@
               </p>
             </div>
           </div>
+
+          <!-- Elbow Pain -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="flex flex-col items-center text-center p-6">
+              <img src="assets/image/elbow.jpg" alt="Elbow Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+              <h4 class="text-xl font-semibold mb-2">Elbow Pain</h4>
+              <p class="text-slate-600">
+                Effective rehabilitation for tennis elbow, golfer’s elbow, and more.
+              </p>
+            </div>
+          </div>
+
+          <!-- Knee Pain -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="flex flex-col items-center text-center p-6">
+              <img src="assets/image/knee.jpg" alt="Knee Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+              <h4 class="text-xl font-semibold mb-2">Knee Pain</h4>
+              <p class="text-slate-600">
+                Restore function and mobility with proven knee therapy techniques.
+              </p>
+            </div>
+          </div>
+
+          <!-- Wrist Pain -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="flex flex-col items-center text-center p-6">
+              <img src="assets/image/wrist.jpg" alt="Wrist Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+              <h4 class="text-xl font-semibold mb-2">Wrist Pain</h4>
+              <p class="text-slate-600">
+                Reduce strain and recover flexibility with tailored wrist care.
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
-    
 
 
+  </main>
+  <!-- ------------------------------------- why choose us  ------------------------------------- -->
 
-    <!-- --------------------------------------------- footer -------------------------------------- -->
+  <section class="w-full bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-2">
 
-    <footer class="w-full bg-black text-white py-10">
-      <div class="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-1">
-        <!-- footer Button -->
-    <a href="#about" class="hover:text-blue-200 font-semibold py-3 px-6">About</a>
-    <a href="#blog" class="hover:text-blue-200 font-semibold py-3 px-6">Blog</a>
-    <a href="#services" class="hover:text-blue-200 font-semibold py-3 px-6">Services</a>
-    <a href="#!" class="text-white font-semibold py-3 px-6 hover:text-blue-200">Contact Us</a>
-        <!-- Copyright Text -->
-        <p class="text-sm text-gray-400 text-center md:text-right">
-          &copy; 2025 | MPT. All rights reserved.
+      <!-- Left Side: Why Choose Us -->
+      <div class="bg-white rounded-xl shadow-lg p-10">
+        <h2 class="text-4xl font-bold text-black mb-6">Why Choose Our <br /> Service?</h2>
+        <p class="text-slate-600 mb-10">
+          Our dedicated team ensures personalized physiotherapy solutions for long-term healing and comfort.
+          With proven techniques and a focus on holistic well-being, you're in expert hands.
+        </p>
+
+        <!-- Bullet Points Grid -->
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <h4 class="text-xl font-semibold text-black mb-2">Expert Therapists</h4>
+            <p class="text-slate-500 text-sm">Highly skilled and certified professionals.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-black mb-2">Latest Techniques</h4>
+            <p class="text-slate-500 text-sm">Modern methods for faster recovery.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-black mb-2">Flexible Scheduling</h4>
+            <p class="text-slate-500 text-sm">Sessions that fit your routine.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-black mb-2">Affordable Plans</h4>
+            <p class="text-slate-500 text-sm">Quality care that fits your budget.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Features Cards -->
+      <div class="grid gap-6">
+
+        <!-- Home Visit Card -->
+        <div class="bg-white rounded-xl shadow-md flex items-center p-6">
+          <img src="assets/image/shoulder.jpg" alt="Home Visit" class="w-20 h-20 rounded-full object-cover mr-6" />
+          <div>
+            <h4 class="text-xl font-semibold text-black mb-1">Home Visit</h4>
+            <p class="text-slate-500 text-sm">We offer professional physiotherapy in the comfort of your home.</p>
+          </div>
+        </div>
+
+        <!-- Qualified Doctor Card -->
+        <div class="bg-white rounded-xl shadow-md flex items-center p-6">
+          <img src="assets/image/back.jpg" alt="Qualified Doctor" class="w-20 h-20 rounded-full object-cover mr-6" />
+          <div>
+            <h4 class="text-xl font-semibold text-black mb-1">Qualified Doctor</h4>
+            <p class="text-slate-500 text-sm">Our doctors are licensed and experienced in multiple specializations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ------------------------------------------ about card ------------------------------------- -->
+  <section class="w-full bg-green-50 py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <!-- Heading -->
+      <h2 class="text-4xl font-bold text-black">Meet the Doctor</h2>
+      <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi expedita reprehenderit delectus rerum qui hic
+        reiciendis eveniet maxime.
+      </p>
+
+      <!-- Doctor Card -->
+      <div class="mt-16 flex flex-col items-center md:flex-row md:justify-center">
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row max-w-3xl">
+
+          <!-- Doctor Image -->
+          <div class="flex-shrink-0">
+            <img src="assets/image/doctor0-min.png" alt="Our Doctor"
+              class="w-full h-80 object-cover md:h-full md:w-64" />
+          </div>
+
+          <!-- Doctor Info -->
+          <div class="p-6 text-left">
+            <h3 class="text-2xl font-semibold text-black">Dr. John Doe</h3>
+            <p class="text-sm text-slate-500 mt-2 mb-4">Qualified Physiotherapist</p>
+            <p class="text-slate-600">
+              Passionate about helping patients recover and live pain-free. Dr. John brings 15+ years of experience in
+              modern physiotherapy techniques.
+            </p>
+            <button type="button"
+              class="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg">
+              Book an Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ------------------------------------------ testimonials ----------------------------------- -->
+
+  <section class="w-full bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Section Heading -->
+      <div class="text-center px-4">
+        <h2 class="text-4xl font-bold text-gray-800">Testimonials</h2>
+        <p class="mt-4 text-slate-500 max-w-xl mx-auto">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita
+          reprehenderit delectus rerum qui hic reiciendis eveniet maxime.
         </p>
       </div>
-    </footer>
-    
-  </body>
+
+
+      <!-- Testimonials -->
+      <div class="test-scroll no-scrollbar grid gap-4 mt-16 w-full">
+
+        <!-- Testimonial Card 1 -->
+        <div class="w-80 bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/shoulder.jpg" alt="Shoulder Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Targeted therapy to relieve shoulder tension and restore range of motion.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="w-80 bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/back.jpg" alt="Back Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Customized treatment plans to ease back discomfort and improve posture.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="w-80 bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Alleviate stiffness and regain mobility with gentle neck therapy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="w-80 bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Alleviate stiffness and regain mobility with gentle neck therapy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="w-80 bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Alleviate stiffness and regain mobility with gentle neck therapy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="w-80 bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Alleviate stiffness and regain mobility with gentle neck therapy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="w-80 bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/neck.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Alleviate stiffness and regain mobility with gentle neck therapy.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="text-sm text-gray-500 px-4 mb-2 ">Swipe to see more →</p>
+
+  </section>
+
+
+
+
+  <!-- --------------------------------------------- footer -------------------------------------- -->
+
+  <footer class="w-full bg-black text-white py-20">
+    <div class="container mx-auto px-4">
+
+      <!-- Footer Links -->
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
+        <a href="#about" class="hover:text-blue-200 font-semibold py-3 px-6">About</a>
+        <a href="#blog" class="hover:text-blue-200 font-semibold py-3 px-6">Blog</a>
+        <a href="#services" class="hover:text-blue-200 font-semibold py-3 px-6">Services</a>
+        <a href="#!" class="hover:text-blue-200 font-semibold py-3 px-6">Contact Us</a>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
+        <!-- social media icons -->
+        <a href="#!" class="text-gray-400 hover:text-blue-200">
+          <img src="assets/image/404.svg" alt="Facebook" class="w-6 h-6" />
+        </a>
+        <a href="#!" class="text-gray-400 hover:text-blue-200">
+          <img src="assets/image/404.svg" alt="Twitter" class="w-6 h-6" />
+        </a>
+        <a href="#!" class="text-gray-400 hover:text-blue-200">
+          <img src="assets/image/404.svg" alt="Instagram" class="w-6 h-6" />
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="text-sm text-gray-400 text-center">
+        &copy; 2025 | MPT. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+</body>
+
 </html>
