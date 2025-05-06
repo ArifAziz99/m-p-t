@@ -13,23 +13,26 @@
 
 <body class="scroll-smooth">
 
-  <nav class="fixed top-0 left-0 z-50 flex items-center justify-between w-full h-14 md:h-20 px-6 bg-white/50 backdrop-blur-lg shadow-md">
+  <nav
+    class="fixed top-0 left-0 z-50 flex items-center justify-between w-full h-14 md:h-20 px-6 bg-white/50 backdrop-blur-lg shadow-md">
     <!-- Logo -->
     <a id="logo1" href="index.html">
       <img src="assets/logo/logo0.png" alt="MPT Logo" class="h-16 m-2" />
     </a>
-  
+
     <!-- Hamburger Button (Mobile) -->
     <button id="menu-toggle" class="md:hidden text-3xl text-gray-700 focus:outline-none">
       ☰
     </button>
-  
+
     <!-- Navigation Links -->
-    <ul id="menu" class="hidden md:flex flex flex-col md:flex-row md:gap-16 gap-4 absolute md:static top-14 right-0 w-auto bg-white md:bg-transparent px-6 py-4 md:p-0 gap-16 text-gray-500 text-md font-semibold shadow-md md:shadow-none items-center rounded-lg">
+    <ul id="menu"
+      class="hidden md:flex flex flex-col md:flex-row md:gap-16 gap-4 absolute md:static top-14 right-0 w-auto bg-white md:bg-transparent px-6 py-4 md:p-0 gap-16 text-gray-500 text-md font-semibold shadow-md md:shadow-none items-center rounded-lg">
       <li><a href="index.html" class="hover:text-black block ">Home</a></li>
       <li><a href="blog.html" class="hover:text-black block ">Blog</a></li>
       <li>
-        <button type="button" class="text-md font-semibold px-8 py-2 text-white bg-green-500 hover:bg-green-600 rounded-full w-auto ">
+        <button type="button"
+          class="text-md font-semibold px-8 py-2 text-white bg-green-500 hover:bg-green-600 rounded-full w-auto ">
           Contact Us
         </button>
       </li>
@@ -38,64 +41,100 @@
 
   <!-- Blog Section -->
   <main class="w-full bg-white pt-20 md:pt-28 pb-28"">
-    <section class="max-w-7xl mx-auto px-6">
-      <h1 class="text-4xl font-bold text-center mb-12">Our Blog</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Blog Post 1 -->
-        <article class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="/m-p-t/assets/image/img1.jpg" alt="Blog Post 1" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h2 class="text-xl font-bold mb-2">Understanding Physiotherapy</h2>
-            <p class="text-gray-500 mb-4">Learn the basics of physiotherapy and how it can help you recover from injuries.Learn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuries</p>
-            <a href="#" class="text-green-500 font-semibold hover:underline">Read More</a>
+    <section class=" max-w-7xl mx-auto px-6">
+    <h1 class="text-4xl font-bold text-center mb-12">Our Blog</h1>
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+      <!-- Blog Post 1 -->
+      <article class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="/m-p-t/assets/image/img1.jpg" alt="Blog Post 1" class="w-full h-80 object-cover">
+        <div class="p-4 mb-4">
+          <h3 class="text-xl font-bold">"The Day I Chose to Slow Down"</h3>
+          <p class="text-gray-600">Life had become a blur—meetings, deadlines, and never-ending notifications. Until one
+            quiet morning changed everything.</p>
+
+          <!-- Toggle Button -->
+          <button onclick="toggleBlog(this)" class="text-green-600 mt-2">Read More</button>
+
+          <!-- Hidden Full Content -->
+          <div class="hidden mt-2 text-gray-700">
+            <p>It started with a forgotten alarm. I woke up late, panicked, and rushed out the door without breakfast.
+              The usual chaos awaited—emails piling up, messages pinging nonstop, and a calendar packed to the brim. But
+              something was different that day.
+
+              By noon, my body forced a pause. I felt drained, dizzy, and done. Instead of pushing through, I stepped
+              outside and walked aimlessly for ten minutes. No phone. No headphones. Just the quiet rustling of trees
+              and the sound of my own breath.
+
+              That walk became a turning point.
+
+              I began setting boundaries—no more checking emails after dinner, no more saying yes to every request. I
+              traded urgency for intention, and busyness for presence. It wasn’t easy, but it was worth it.
+
+              Now, I start each day with stillness. A cup of tea, a few deep breaths, and a reminder: life isn’t a race,
+              and slowing down is not a weakness—it’s wisdom.</p>
           </div>
-        </article>
-        <!-- Blog Post 2 -->
-        <article class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="/m-p-t/assets/image/img2.jpg" alt="Blog Post 2" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h2 class="text-xl font-bold mb-2">Top 5 Exercises for Back Pain</h2>
-            <p class="text-gray-500 mb-4">Discover effective exercises to alleviate back pain and improve posture.Learn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuries</p>
-            <a href="#" class="text-green-500 font-semibold hover:underline">Read More</a>
+        </div>
+      </article>
+      <!-- Blog Post 2 -->
+      <article class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="/m-p-t/assets/image/img2.jpg" alt="Blog Post 2" class="w-full h-80 object-cover">
+        <div class="p-4 mb-4">
+          <h3 class="text-xl font-bold">"The Day I Decided to Say No"</h3>
+          <p class="text-gray-600">I had always been a "yes" person—saying yes to every request, every opportunity, every demand. Until one day, I realized how much it was costing me.</p>
+
+          <!-- Toggle Button -->
+          <button onclick="toggleBlog(this)" class="text-green-600 mt-2">Read More</button>
+
+          <!-- Hidden Full Content -->
+          <div class="hidden mt-2 text-gray-700">
+            <p>It started with a simple question: "Can you help me with this?" I said yes, as I always did. But this time, instead of feeling the usual sense of accomplishment, I felt a knot form in my stomach. It wasn’t that I didn’t want to help; it was that I felt overwhelmed by the constant need to please, to do more, to be everything for everyone.
+
+              The day went on, and I found myself juggling yet another task, another obligation, all the while feeling my energy drain. By the afternoon, I had reached a tipping point—exhausted, irritable, and resentful of the never-ending list of things I had agreed to do.
+              
+              That’s when it hit me: I had been saying yes to everyone else while saying no to myself.
+              
+              I took a deep breath and made a decision that day: I would start saying no.
+              
+              At first, it felt uncomfortable. It felt like I was letting people down, like I was being selfish. But with each "no," I reclaimed a little bit of my time, my peace, and my sanity. I started saying no to tasks that weren’t aligned with my values, no to commitments that drained me, no to things that didn’t serve my well-being.
+              
+              It wasn’t easy, and it wasn’t always met with understanding, but it was necessary.
+              
+              Now, I choose my commitments intentionally. When I say yes, it’s because I truly want to, not because I feel obligated. Saying no has become my way of saying yes to myself—my mental health, my boundaries, and my peace of mind.
+              
+              Today, I remind myself that saying no isn’t a rejection of others; it’s an affirmation of my own needs. It’s a way of ensuring that when I do say yes, I can give my best without losing myself in the process.</p>
           </div>
-        </article>
-        <!-- Blog Post 3 -->
-        <article class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="/m-p-t/assets/image/img3.jpg" alt="Blog Post 3" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h2 class="text-xl font-bold mb-2">Benefits of Regular Physiotherapy</h2>
-            <p class="text-gray-500 mb-4">Explore the long-term benefits of regular physiotherapy sessions.Learn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuries</p>
-            <a href="#" class="text-green-500 font-semibold hover:underline">Read More</a>
+        </div>
+      </article>
+      <!-- Blog Post 3 -->
+      <article class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="/m-p-t/assets/image/img3.jpg" alt="Blog Post 3" class="w-full h-80 object-cover">
+        <div class="p-4 mb-4">
+          <h3 class="text-xl font-bold">"The Day I Learned to Let Go"</h3>
+          <p class="text-gray-600">I used to think that holding on tightly was the key to control. But one afternoon, I discovered the power of letting go.</p>
+
+          <!-- Toggle Button -->
+          <button onclick="toggleBlog(this)" class="text-green-600 mt-2">Read More</button>
+
+          <!-- Hidden Full Content -->
+          <div class="hidden mt-2 text-gray-700">
+            <p>It all began with a small mistake—one I had made at work. I was furious with myself, replaying every detail in my mind, wishing I could go back and fix it. I spent hours overthinking, trying to come up with solutions, and feeling a constant weight in my chest. I couldn’t seem to let it go.
+
+              The next morning, I woke up still carrying the burden. As I sat at my desk, surrounded by the usual noise of emails and tasks, I felt a quiet frustration building. The more I tried to hold on to the mistake, the heavier it became.
+              
+              In a moment of frustration, I closed my laptop, stood up, and walked outside. The cool air hit my face, and I realized I had been holding on to something I couldn’t change. The thought struck me: Why am I allowing this mistake to control me?
+              
+              That’s when I decided to let go.
+              
+              It wasn’t about ignoring my responsibilities or avoiding accountability—it was about releasing the unnecessary weight I had placed on myself. I let go of the guilt, the overthinking, and the need for perfection. I reminded myself that making mistakes is part of being human, and it's how we learn and grow.
+              
+              It wasn’t easy, and it didn’t happen overnight. But each day, I practiced releasing the need to control everything and embraced the freedom of acceptance. I started focusing on what I could do next, instead of what I couldn’t change.
+              
+              Now, I approach life with a little more ease. I still make mistakes, but I’ve learned that letting go of the past allows me to move forward with clarity and peace. Life isn’t about perfection—it’s about growth, and sometimes, growth comes from knowing when to release and trust the process.</p>
           </div>
-        </article>
-        <!-- Blog Post 3 -->
-        <article class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="/m-p-t/assets/image/img4.jpg" alt="Blog Post 3" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h2 class="text-xl font-bold mb-2">Benefits of Regular Physiotherapy</h2>
-            <p class="text-gray-500 mb-4">Explore the long-term benefits of regular physiotherapy sessions.Learn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuries</p>
-            <a href="#" class="text-green-500 font-semibold hover:underline">Read More</a>
-          </div>
-        </article>
-        <!-- Blog Post 3 -->
-        <article class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="/m-p-t/assets/image/img5.jpg" alt="Blog Post 3" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h2 class="text-xl font-bold mb-2">Benefits of Regular Physiotherapy</h2>
-            <p class="text-gray-500 mb-4">Explore the long-term benefits of regular physiotherapy sessions.Learn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuries</p>
-            <a href="#" class="text-green-500 font-semibold hover:underline">Read More</a>
-          </div>
-        </article>
-        <!-- Blog Post 3 -->
-        <article class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="/m-p-t/assets/image/img6.jpg" alt="Blog Post 3" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h2 class="text-xl font-bold mb-2">Benefits of Regular Physiotherapy</h2>
-            <p class="text-gray-500 mb-4">Explore the long-term benefits of regular physiotherapy sessions.Learn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuriesLearn the basics of physiotherapy and how it can help you recover from injuries</p>
-            <a href="#" class="text-green-500 font-semibold hover:underline">Read More</a>
-          </div>
-        </article>
-      </div>
+        </div>
+      </article>
+      
+    </div>
     </section>
   </main>
 
@@ -105,10 +144,8 @@
 
       <!-- Footer Links -->
       <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
-        <a href="#about" class="hover:text-white font-semibold px-6">About</a>
+        <a href="index.html" class="hover:text-white font-semibold px-6">About</a>
         <a href="#blog" class="hover:text-white font-semibold px-6">Blog</a>
-        <a href="#services" class="hover:text-white font-semibold px-6">Services</a>
-        <a href="#!" class="hover:text-white font-semibold px-6">Contact Us</a>
       </div>
 
       <div class="flex flex-row justify-center items-center gap-4 mb-6">
@@ -131,6 +168,15 @@
 
     </div>
   </footer>
+
+  <!-- read more to show less -->
+  <script>
+    function toggleBlog(button) {
+      const content = button.nextElementSibling;
+      content.classList.toggle('hidden');
+      button.textContent = content.classList.contains('hidden') ? 'Read More' : 'Show Less';
+    }
+  </script>
 
 </body>
 
