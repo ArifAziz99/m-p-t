@@ -33,7 +33,8 @@
       <li><a href="#home" class="hover:text-black block ">Home</a></li>
       <li><a href="#services" class="hover:text-black block ">Services</a></li>
       <li><a href="#about" class="hover:text-black block ">About</a></li>
-      <li><a href="blog.html" class="hover:text-black block ">Blog</a></li>
+      <li><a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a>
+      </li>
 
       <li>
         <button type="button" onclick="openContactModal()"
@@ -49,11 +50,11 @@
 
   <main class="scroll-smooth">
     <!-- ----------------------------------- hero section with hreo text ---------------------------- -->
-    <section id="home" class="w-full bg-white bg-no-repeat pt-20 md:pt-28 pb-12">
-      <div class="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
+    <section id="home" class="w-full xl:h-[90vh] bg-white bg-no-repeat pt-20 md:pt-28 pb-12">
+      <div class="content1 hidden1 flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
 
         <!-- Text Content -->
-        <div class="md:w-1/2 text-center md:text-left">
+        <div class="cursor-default md:w-1/2 text-center md:text-left">
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-black">
             Modern <br class="hidden md:block" />
             <span class="text-5xl lg:text-8xl relative inline-block text-transparent py-4 -my-3 -mt-5 bg-clip-text bg-gradient-to-r from-green-500 to-gray-400 transition-all duration-500 ease-in hover:from-gray-400 hover:to-green-500">Physiotherapy</span> <br class="hidden md:block" />
@@ -79,7 +80,7 @@
 
     <!-- -------------------------------------- services card -------------------------------------- -->
     <section id="services" class="w-full bg-gray-100 bg-no-repeat py-20">
-      <div class="max-w-7xl mx-auto px-6">
+      <div class="content1 hidden1  max-w-7xl mx-auto px-6">
         <!-- Section Headline -->
         <div class="text-center mb-16">
           <h2 class="text-black text-4xl sm:text-5xl font-bold">
@@ -169,7 +170,7 @@
   <!-- ------------------------------------- why choose us  ------------------------------------- -->
 
   <section class="w-full bg-gray-100 py-20">
-    <div class="max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-2">
+    <div class="content1 hidden1 max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-2">
 
       <!-- Left Side: Why Choose Us -->
       <div class="bg-white rounded-xl shadow-lg p-10">
@@ -227,7 +228,7 @@
 
   <!-- ------------------------------------------ about card ------------------------------------- -->
   <section id="about" class="w-full bg-green-50 py-20">
-    <div class="max-w-5xl mx-auto px-6 text-center">
+    <div class="content1 hidden1 max-w-5xl mx-auto px-6 text-center">
       <!-- Heading -->
       <h2 class="text-4xl font-bold text-black">Meet the Doctor</h2>
       <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
@@ -242,7 +243,7 @@
           <!-- Doctor Image -->
           <div class="flex-shrink-0">
             <img src="assets/image/doctor0-min.png" alt="Our Doctor"
-              class="w-full h-80 object-cover md:h-full md:w-64" />
+              class="w-full h-80 object-cover md:h-full md:w-64 pb-4" />
           </div>
 
           <!-- Doctor Info -->
@@ -267,7 +268,7 @@
   <!-- ------------------------------------------ testimonials ----------------------------------- -->
 
   <section class="w-full bg-white py-20">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="content1 hidden1 max-w-7xl mx-auto px-6">
       <!-- Section Heading -->
       <div class="text-center px-4">
         <h2 class="text-4xl font-bold text-gray-800">Testimonials</h2>
@@ -330,8 +331,8 @@
       <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 mb-6">
         <a href="#services" class="hover:text-white font-semibold px-6">Services</a>
         <a href="#about" class="hover:text-white font-semibold px-6">About</a>
-        <a href="blog.html" class="hover:text-white font-semibold px-6">Blog</a>
-        <a href="#!" onclick="openContactModal()" class="hover:text-white font-semibold px-6">Contact Us</a>
+        <a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a>
+        <a href="#contact" onclick="openContactModal()" class="hover:text-white font-semibold px-6">Contact Us</a>
         
       </div>
 
