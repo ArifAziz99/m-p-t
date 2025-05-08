@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="style/style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="src/script.js" defer></script>
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MPT" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
 
 <body class="scroll-smooth">
@@ -50,22 +56,26 @@
 
   <main class="scroll-smooth">
     <!-- ----------------------------------- hero section with hreo text ---------------------------- -->
-    <section id="home" class="relative w-full xl:h-[90vh] bg-[url(assets/image/hero-img.jpg)] bg-cover bg-no-repeat bg-center pt-20 md:pt-28 pb-12">
+    <section id="home"
+      class="relative w-full xl:h-[90vh] bg-[url(assets/image/hero-img.jpg)] bg-cover bg-no-repeat bg-center pt-20 md:pt-28 pb-12">
       <div class="absolute inset-0 bg-white/40 z-0"></div>
-      <div class="content1 hidden1 flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
+      <div
+        class="content1 hidden1 flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
 
         <!-- Text Content -->
         <div class="cursor-default md:w-1/2 text-center md:text-left">
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-black">
             Modern <br class="hidden md:block" />
-            <span class="text-5xl lg:text-8xl relative inline-block text-transparent py-4 -my-3 -mt-5 bg-clip-text bg-gradient-to-r from-green-500 to-gray-400 transition-all duration-500 ease-in hover:from-gray-400 hover:to-green-500">Physiotherapy</span> <br class="hidden md:block" />
+            <span
+              class="text-5xl lg:text-8xl relative inline-block text-transparent py-4 -my-3 -mt-5 bg-clip-text bg-gradient-to-r from-green-500 to-gray-400 transition-all duration-500 ease-in hover:from-gray-400 hover:to-green-500">Physiotherapy</span>
+            <br class="hidden md:block" />
             Treatment
           </h1>
           <p class="text-lg text-slate-500 mt-6 leading-relaxed">
             Experience pain-free movement and regain confidence<br class="hidden sm:block" />
             in your body with expert physiotherapy care.
           </p>
-          <button type="button"  onclick="openContactModal()"
+          <button type="button" onclick="openContactModal()"
             class="mt-20 px-8 py-4 text-white text-lg font-bold bg-green-500 hover:bg-green-600 transform transition duration-300 hover:scale-110 rounded-full">
             Call Us Now
           </button>
@@ -279,47 +289,47 @@
         </p>
       </div>
 
-<!-- Testimonials -->
-<!-- Testimonials (No Scroll, 3 Cards) -->
-<div class="flex flex-col md:flex-row gap-6 mt-16 w-full justify-center px-4">
-  
-  <!-- Testimonial Card 1 -->
-  <div class="w-full bg-gray-100 rounded-xl shadow-md overflow-hidden">
-    <div class="flex flex-col items-center text-center p-6">
-      <img src="assets/image/pic2.jpg" alt="Shoulder Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-      <h4 class="text-xl font-semibold mb-2">Person</h4>
-      <p class="text-slate-600">
-        Targeted therapy to relieve shoulder tension and restore range of motion.
-      </p>
-    </div>
-  </div>
+      <!-- Testimonials -->
+      <!-- Testimonials (No Scroll, 3 Cards) -->
+      <div class="flex flex-col md:flex-row gap-6 mt-16 w-full justify-center px-4">
 
-  <!-- Testimonial Card 2 -->
-  <div class="w-full bg-gray-100 rounded-xl shadow-md overflow-hidden">
-    <div class="flex flex-col items-center text-center p-6">
-      <img src="assets/image/pic3.jpg" alt="Back Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-      <h4 class="text-xl font-semibold mb-2">Person</h4>
-      <p class="text-slate-600">
-        Customized treatment plans to ease back discomfort and improve posture.
-      </p>
-    </div>
-  </div>
+        <!-- Testimonial Card 1 -->
+        <div class="w-full bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/pic2.jpg" alt="Shoulder Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Targeted therapy to relieve shoulder tension and restore range of motion.
+            </p>
+          </div>
+        </div>
 
-  <!-- Testimonial Card 3 -->
-  <div class="w-full bg-gray-100 rounded-xl shadow-md overflow-hidden">
-    <div class="flex flex-col items-center text-center p-6">
-      <img src="assets/image/pic4.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
-      <h4 class="text-xl font-semibold mb-2">Person</h4>
-      <p class="text-slate-600">
-        Alleviate stiffness and regain mobility with gentle neck therapy.
-      </p>
-    </div>
-  </div>
+        <!-- Testimonial Card 2 -->
+        <div class="w-full bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/pic3.jpg" alt="Back Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Customized treatment plans to ease back discomfort and improve posture.
+            </p>
+          </div>
+        </div>
 
-</div>
-
+        <!-- Testimonial Card 3 -->
+        <div class="w-full bg-gray-100 rounded-xl shadow-md overflow-hidden">
+          <div class="flex flex-col items-center text-center p-6">
+            <img src="assets/image/pic4.jpg" alt="Neck Pain" class="w-24 h-24 rounded-full object-cover mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Person</h4>
+            <p class="text-slate-600">
+              Alleviate stiffness and regain mobility with gentle neck therapy.
+            </p>
+          </div>
+        </div>
 
       </div>
+
+
+    </div>
 
   </section>
 
@@ -334,7 +344,7 @@
         <a href="#about" class="hover:text-white font-semibold px-6">About</a>
         <a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a>
         <a href="#contact" onclick="openContactModal()" class="hover:text-white font-semibold px-6">Contact Us</a>
-        
+
       </div>
 
       <div class="flex flex-row justify-center items-center gap-4 mb-6">
@@ -359,7 +369,8 @@
   </footer>
 
   <!-- Contact Modal -->
-  <div id="contactModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center hidden z-50">
+  <div id="contactModal"
+    class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center hidden z-50">
     <div class="bg-white rounded-xl shadow-lg p-6 w-80 relative">
       <button onclick="closeContactModal()"
         class="absolute top-2 right-3 text-gray-500 hover:text-black text-3xl">&times;</button>
