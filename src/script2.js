@@ -5,6 +5,22 @@ function toggleBlog(button) {
     button.textContent = content.classList.contains('hidden') ? 'Read More' : 'Show Less';
   }
 
+// navbar mobile
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+function openContactModal() {
+  document.getElementById('contactModal').classList.remove('hidden')
+}
+
+function closeContactModal() {
+  document.getElementById('contactModal').classList.add('hidden')
+}
+
 
 // Set up IntersectionObserver to detect when sections come into view
 const sections = document.querySelectorAll(".content1");
