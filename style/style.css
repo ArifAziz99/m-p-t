@@ -56,3 +56,7 @@ html {
 	opacity: 1;
 	transform: translateY(0);
 }
+
+#navbar{
+  transition: top 0.5s ease-in-out;
+}
