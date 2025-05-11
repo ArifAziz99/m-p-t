@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  font-family: "Nunito", sans-serif;
+  overscroll-behavior: contain;
+}
+
+
 /* hover effect */
 .link--underline {
   text-decoration: none;

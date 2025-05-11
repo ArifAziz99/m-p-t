@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
   }
   
+  body{
+    font-family: "Nunito", sans-serif;
+    overscroll-behavior: contain;
+  }
+  
   /* Initial state for animation (hidden off-screen) */
   .hidden1 {
       opacity: 0;
