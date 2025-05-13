@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet" />
-      <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
-      <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
+    rel="stylesheet" />
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
   <link rel="stylesheet" href="style/style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="src/script.js" defer></script>
@@ -28,7 +28,7 @@
   <div class="mouse-dot"></div>
 
   <!-- -------------------------------------------- navbar ------------------------------------- -->
-  <nav id="navbar" 
+  <nav id="navbar"
     class="navbar fixed top-0 left-0 z-50 flex items-center justify-between w-full h-14 md:h-20 px-6 bg-white/50 backdrop-blur-lg shadow-md">
     <!-- Logo -->
     <a id="logo1" href="#">
@@ -291,8 +291,8 @@
       <div class="text-center px-4">
         <h2 class="text-4xl font-bold text-gray-800">Testimonials</h2>
         <p class="mt-4 text-slate-500 max-w-xl mx-auto">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita
-          reprehenderit delectus rerum qui hic reiciendis eveniet maxime.
+          Compassion meets results.
+          Hear directly from our patients.
         </p>
       </div>
 
@@ -372,6 +372,12 @@
         &copy; 2025 | MPT. All rights reserved.
       </p>
 
+        <!--my-watermark-->
+      <p class="text-sm text-gray-500 text-center pt-6">
+        Designed & Developed by <a href="https://timeforsalah.netlify.app/" target="_blank"
+          class="bg-white rounded-xl px-2 mx-1 hover:underline font-semibold">Arif</a>
+      </p>
+
     </div>
   </footer>
 
@@ -382,9 +388,12 @@
       <button onclick="closeContactModal()"
         class="absolute top-2 right-3 text-gray-500 hover:text-black text-3xl">&times;</button>
       <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
-      <p><strong>Email:</strong> contact@example.com</p>
-      <p><strong>Phone:</strong> +1 234 567 890</p>
-      <p><strong>Address:</strong> 123 Street Name, City</p>
+      <p><strong>Email: </strong><a href="mailto:contact@example.com"
+          class="items-center gap-3 hover:text-blue-600">contact@example.com</a></p>
+      <p><strong>Phone: </strong> <a href="tel:+1234567890" class="items-center gap-3 hover:text-green-600">+1 234 567
+          890</a></p>
+      <p><strong>Address: </strong><a href="https://www.google.com/maps/search/?api=1&query=123+Street+Name,+City"
+          target="_blank" class="items-center gap-3 hover:text-red-600"> 123 Street Name, City</p>
     </div>
   </div>
 </body>
