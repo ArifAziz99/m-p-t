@@ -66,3 +66,16 @@ body{
 #navbar{
   transition: top 0.5s ease-in-out;
 }
+
+/* .animated-gradient {
+  background: linear-gradient(45deg, #4ade80, #0ea5e9, #4ade80);
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+  background-clip: text;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
